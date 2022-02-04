@@ -1,0 +1,32 @@
+<form #myForm="ngForm" class="container mt-5 pt-5">
+    <h2 style="margin-bottom: 50px; margin-top: 5px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(2, 100, 107);"><b>Izmenite unete podatke:</b></h2>
+    <div class="form-group">
+        <label for="ime">Ime pacijenta</label>
+        <input class="form-control"  type="text" name="ime" [(ngModel)]="zakazivanje2.ime_pacijenta" value={{zakazivanje2.ime_pacijenta} >
+    </div>
+    <div class="form-group">
+        <label for="prezime">Prezime pacijenta</label>
+        <input class="form-control"  type="text" name="prezime" [(ngModel)]="zakazivanje2.prezime_pacijenta" value={{zakazivanje2.prezime_pacijenta}>
+    </div>
+    <div class="form-group">
+        <label for="intervencija">Naziv intervencije</label>
+        <input class="form-control"  type="text" name="intervencija" [(ngModel)]="zakazivanje2.naziv" value={{zakazivanje2.naziv}>
+    </div>
+    <div class="form-group">
+        <label for="datum">Datum termina</label>
+        <input class="form-control"  type="text" name="datum" [(ngModel)]="zakazivanje2.datum" value={{zakazivanje2.datum}>
+    </div>
+    <div class="form-group">
+        <label for="vreme">Vreme termina</label>
+        <input class="form-control"  type="text" name="vreme" [(ngModel)]="zakazivanje2.vreme" value={{zakazivanje2.vreme}>
+    </div>
+    <div class="form-group">
+        <label for="telefon">Kontakt telefon</label>
+        <input class="form-control"  type="text" name="telefon" [(ngModel)]="zakazivanje2.telefon" value={{zakazivanje2.telefon}>
+    </div>
+    <div class="col button-holder d-flex justify-content-center align-items-center mt-4" style="margin-bottom: 100px;">
+        <button (click)="updateZakazivanje(zakazivanje2)" type="submit" name="submit" class="btn btn-outline-info">Sačuvaj izmene</button>
+    </div>
+</form>
+
+

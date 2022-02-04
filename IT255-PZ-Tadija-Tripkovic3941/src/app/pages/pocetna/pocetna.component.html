@@ -1,0 +1,48 @@
+<app-header> </app-header>
+
+<div class="container mt-5 pt-5">
+    <div class="mb-3">
+        <h3>Pretraga</h3>
+        <input [(ngModel)]="unos" placeholder="Unesite pojam za pretragu">
+    </div>
+    <table  class="table">
+        <thead>
+            <tr>
+                
+                <th scope="col">ID</th>
+                <th scope="col">Ime pacijenta</th>
+                <th scope="col">Prezime pacijenta</th>
+                <th scope="col">Intervencija</th>
+                <th scope="col">Datum</th>
+                <th scope="col">Vreme</th>
+                <th scope="col">Kontakt telefon</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let zakazivanje of zakazivanja | filterImePac: unos">
+                <td>
+                    {{zakazivanje.id}}
+                </td>
+                <td>
+                    {{zakazivanje.ime_pacijenta}}
+                </td>
+                <td>
+                    {{zakazivanje.prezime_pacijenta}}
+                </td>
+                <td>
+                    {{zakazivanje.naziv}}
+                </td>
+                <td>
+                    {{zakazivanje.datum}}
+                </td>
+                <td>
+                    {{zakazivanje.vreme}}
+                </td>
+                <td>
+                    {{zakazivanje.telefon}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<app-footer></app-footer>

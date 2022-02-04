@@ -1,0 +1,21 @@
+<ul  class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="/pocetna" role="tab" aria-controls="home" aria-selected="true">Početna</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/zakazi']" class="nav-link" id="profile-tab" data-toggle="tab" href="/zakazi" role="tab" aria-controls="profile" aria-selected="false">Novi termin</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="/svi-termini" role="tab" aria-controls="contact" aria-selected="false">Zakazano</a>
+    </li>
+    <li>
+    
+      <button (click)="logOut()" type="submit"  name="submit" class="btn btn-outline-danger">Odjavi se {{doktor.ime}}</button>
+  
+</li>
+  </ul>
+  <div class="tab-content" id="myTabContent" style="margin-top: 45px; margin-left: 65px;">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(5, 126, 134); font-size: xx-large;"><b>Stomatološka ordinacija 'Zubić'</b></div>
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(2, 65, 70); font-size: large;">Trstenik, Srbija</div>
+  </div>
+  

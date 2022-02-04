@@ -1,0 +1,57 @@
+{
+  "doktor": [
+    {
+      "id": 1,
+      "ime": "Davor",
+      "prezime": "Stepanovic",
+      "titula": "Dr Stomatolog",
+      "username": "davordr",
+      "password": "davordr"
+    },
+    {
+      "id": 2,
+      "ime": "Branislav",
+      "prezime": "Damnjanovic",
+      "titula": "Dr",
+      "username": "branislavdr",
+      "password": "branislavdr"
+    },
+    {
+      "id": 3,
+      "ime": "Misko",
+      "prezime": "Katic",
+      "titula": "dr",
+      "username": "miskodr",
+      "password": "miskodr"
+    }
+  ],
+  "zakazivanje": [
+    {
+      "id": 1,
+      "ime_pacijenta": "Nikola",
+      "prezime_pacijenta": "Tanaskovic",
+      "naziv": "Popravka zuba",
+      "datum": "10.08.2022.",
+      "vreme": "10:00h",
+      "telefon": "0624563486"
+    },
+    {
+      "id": 2,
+      "ime_pacijenta": "Andrea",
+      "prezime_pacijenta": "Arsic",
+      "naziv": "Skidanje kamenca",
+      "datum": "12.02.2022.",
+      "vreme": "10:15h",
+      "telefon": "0624999086"
+    },
+    {
+      "id": 3,
+      "ime_pacijenta": "Mina",
+      "prezime_pacijenta": "Vasic",
+      "naziv": "Pregled",
+      "datum": "20.02.2022.",
+      "vreme": "08:00h",
+      "telefon": "0647785785"
+    }
+  ]
+}
